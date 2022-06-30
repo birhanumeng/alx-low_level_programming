@@ -4,7 +4,7 @@
  * main - Entry point
  * Description: print size of data types
  * Return: 0 (Success)
- * /
+ */
 int main (void)
 {
 	int a;
