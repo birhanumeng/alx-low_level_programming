@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Description: print "with proper grammar, but the outcome is a piece of art," using printf
+ * Description: print "with proper grammar, but the outcome is a piece of art,"
  * Return: return 0
  */
 int main(void)
