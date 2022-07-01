@@ -4,7 +4,7 @@
 
 /**
  * main - Entry level
- * Description: print whether random number generated in n is negative or positive
+ * Description: print wheither a number n is negative or positive
  * Return: return 0 (Success)
  */
 int main(void)
