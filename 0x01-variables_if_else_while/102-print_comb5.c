@@ -20,7 +20,7 @@ int main(void)
 			{
 				for (m = '0'; m <= '9'; m++)
 				{
-
+					
 				        if ((j == i) && (i == k) && (k == m))
 						continue;
 
@@ -30,7 +30,7 @@ int main(void)
 					putchar(k);
 					putchar(m);
 
-					if ((j == '9') && (i == '9') && (k == '9') && (m == '8'))
+					if ((j == '9') && (i == '8') && (k == '9') && (m == '9'))
 						break;
 
 					putchar(',');
