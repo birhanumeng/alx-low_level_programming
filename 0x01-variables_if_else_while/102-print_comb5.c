@@ -12,13 +12,13 @@ int main(void)
 	int k;
 	int m;
 
-	for (j = 0; j <= 9; j++)
+	for (j = '0'; j <= '9'; j++)
 	{
-		for (i = 0; i <= 9; i++)
+		for (i = '0'; i <= '9'; i++)
 		{
-			for (k = 0; k <= 9; k++)
+			for (k = '0'; k <= '9'; k++)
 			{
-				for (m = 0; m <= 9; m++)
+				for (m = '0'; m <= '9'; m++)
 				{
 
 				        if ((j == i) && (i == k) && (k == m))
@@ -30,7 +30,7 @@ int main(void)
 					putchar(k);
 					putchar(m);
 
-					if ((j == 9) && (i == 9) && (k == 9) && (m == 8))
+					if ((j == '9') && (i == '9') && (k == '9') && (m == '8'))
 						break;
 
 					putchar(',');
