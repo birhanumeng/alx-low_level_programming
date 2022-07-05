@@ -17,8 +17,9 @@ int main(void)
 		fb_num = i + j;
 		i = j;
 		j = fb_num;
-		printf("%lu", fb_num);
-		if (check == 49)
+		printf("%lu", (fb_num / 100000));
+		printf("%lu", (fb_num % 100000));
+		if (check == 98)
 			putchar('\n');
 		else
 		{
