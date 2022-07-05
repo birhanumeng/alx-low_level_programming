@@ -7,7 +7,7 @@
   */
 int main(void)
 {
-	unsigned long check;
+	int check;
 	unsigned long fb_num;
 	unsigned long i = 0;
 	unsigned long j = 1;
