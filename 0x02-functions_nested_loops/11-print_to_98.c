@@ -4,6 +4,7 @@
 /**
  * print_to_98 - Print numbers from input number to 98
  *
+ * @n: input number
  * Return: void
  */
 void print_to_98(int n)
