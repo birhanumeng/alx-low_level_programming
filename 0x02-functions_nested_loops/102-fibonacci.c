@@ -18,7 +18,7 @@ int main(void)
 		i = j;
 		j = fb_num;
 		printf("%d", fb_num);
-		if (count == 49)
+		if (check == 49)
 			putchar('\n');
 		else
 		{
