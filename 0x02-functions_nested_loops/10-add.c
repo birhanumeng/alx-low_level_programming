@@ -3,7 +3,7 @@
 /**
  * add - adds two numbers
  * @n1: first operand
- * @j: second operand
+ * @n2: second operand
  * Return: return the result
  */
 int add(int n1, int n2)
