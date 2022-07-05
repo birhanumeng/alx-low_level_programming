@@ -17,7 +17,7 @@ int main(void)
 		fb_num = i + j;
 		i = j;
 		j = fb_num;
-		printf("%lu", fb_num);
+		printf("%d", fb_num);
 		if (count == 49)
 			putchar('\n');
 		else
