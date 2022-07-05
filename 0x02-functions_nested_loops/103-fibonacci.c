@@ -11,7 +11,7 @@ int main(void)
 	unsigned long fb_num;
 	unsigned long i = 0;
 	unsigned long j = 1;
-	unsigned sum = 0;
+	unsigned long sum = 0;
 
 	for (check = 0; check < 50; check++)
 	{
