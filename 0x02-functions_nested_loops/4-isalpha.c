@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * __isalpha - check if the input is English alphabet
+ * _isalpha - check if the input is English alphabet
  *
  * @c: input feild for checking
  * Return: 1 if input is alphabet otherwise 0
