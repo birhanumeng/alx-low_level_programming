@@ -7,17 +7,17 @@
   */
 int main(void)
 {
-	int check;
-	int fb_num;
-	int i = 0;
-	int j = 1;
+	unsigned long check;
+	unsigned long fb_num;
+	unsigned long i = 0;
+	unsigned long j = 1;
 
 	for (check = 0; check < 50; check++)
 	{
 		fb_num = i + j;
 		i = j;
 		j = fb_num;
-		printf("%d", fb_num);
+		printf("%lu", fb_num);
 		if (check == 49)
 			putchar('\n');
 		else
