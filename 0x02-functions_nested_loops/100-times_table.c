@@ -25,6 +25,7 @@ void print_times_table(int n)
 			if (check < 10 && j != 0)
 			{
 				_putchar(' ');
+				_putchar(' ');
 				_putchar(check + '0');
 			}
 			else if (check >= 100)
@@ -35,6 +36,7 @@ void print_times_table(int n)
 			}
 			else if ((check >= 10) && (check < 100))
 			{
+				_putchar(' ');
 				_putchar((check / 10) + '0');
 				_putchar((check % 10) + '0');
 			}
