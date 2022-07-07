@@ -16,6 +16,7 @@ int main(void)
 		if (num % f == 0)
 		{
 			num /= f;
+			f--;
 		}
 	}
 	printf("%ld\n", f);
