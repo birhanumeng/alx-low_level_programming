@@ -7,9 +7,10 @@
  */
 int main(void)
 {
-	int i;
+	int i = 1;
 
-	for (i = 1; 1 < 101; i++)
+	printf("%d", i);
+	for (i = 2; i < 101; i++)
 	{
 		if (i % 3 == 0)
 		{
