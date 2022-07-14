@@ -20,7 +20,7 @@ char *cap_string(char *str)
 			{
 				for (j = 0; j <= 12; j++)
 				{
-					if (str[i-1] == sep[j])
+					if (str[i - 1] == sep[j])
 						str[i] -= 32;
 				}
 			}
