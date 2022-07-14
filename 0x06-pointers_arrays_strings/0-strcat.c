@@ -12,9 +12,9 @@ char *_strcat(char *dest, char *src)
 
 	i = 0;
 	j = 0;
-	while (dest[i++])
+	while (dest[i])
 	{
-		;
+		i++;
 	}
 	while (src[j])
 	{
