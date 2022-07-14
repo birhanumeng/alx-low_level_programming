@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * leet - encodes a string using rot13.
+ * rot13 - encodes a string using rot13.
  * @s: input string.
  * Return: encoded string.
  */
@@ -13,10 +13,10 @@ char *rot13(char *s)
 	{
 		while ((*(s + i) >= 65 && *(s + i) <= 90) || (*(s + i) >= 97 && *(s + i) <= 122))
 		{
-			if ((*(s + i) >= 78 && *(s + i) <= 90) || (*(s + i) >= 110 && *(s + i) <= 122) )
+			if ((*(s + i) >= 78 && *(s + i) <= 90) || (*(s + i) >= 110 && *(s + i) <= 122))
                         {
 				*(s + i) -= 13;
-				breake;
+				break;
 			}
 			*(s + i) += 13;
 			break;
