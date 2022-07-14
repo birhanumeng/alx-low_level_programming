@@ -7,22 +7,22 @@
  */
 char *rot13(char *s)
 {
-	int i = 0;
+	int i = 0, j;
+	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	while (*(s + i))
 	{
-		while ((*(s + i) >= 65 && *(s + i) <= 90) || (*(s + i) >= 97 && *(s + i) <= 122))
+		for (j = 0; j < 52; j++)
 		{
-			if ((*(s + i) >= 78 && *(s + i) <= 90) || (*(s + i) >= 110 && *(s + i) <= 122))
+			if (a[j] == *(s + i))
 			{
-				*(s + i) -= 13;
+				*(s + i) = b[j];
 				break;
 			}
-			*(s + i) += 13;
-			break;
 		}
+
 		i++;
 	}
-
 	return (s);
 }
