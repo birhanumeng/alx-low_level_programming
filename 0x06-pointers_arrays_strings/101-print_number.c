@@ -15,7 +15,7 @@ void print_number(int n)
 		num = -num;
 	}
 
-	while (num / 10 > 0)
+	while ((num / 10) > 0)
 		_putchar((num % 10) + '0');
 
 	_putchar((num % 10) + '0');
