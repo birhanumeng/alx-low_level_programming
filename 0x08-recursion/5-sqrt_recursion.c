@@ -9,7 +9,7 @@ int my_sqrt(int num, int root);
 int _sqrt_recursion(int n)
 {
 	int i = 1;
-	my_sqrt(n, i);
+	return (my_sqrt(n, i));
 }
 
 /**
