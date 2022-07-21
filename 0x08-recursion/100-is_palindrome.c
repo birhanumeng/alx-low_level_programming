@@ -28,7 +28,7 @@ int my_palindrome(char *str, int i, int j)
 	if (*(str + i) != *(str + j))
 		return (0);
 	
-	if (i >= j)
+	if ((i + 1) >= j)
 		return (1);
 
 	return (my_palindrome(str, i++, j--));
