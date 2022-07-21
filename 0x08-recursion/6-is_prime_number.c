@@ -22,7 +22,7 @@ int is_prime_number(int n)
 int my_prime_number(int num, int test)
 {
 	if (num < 2)
-		return (1);
+		return (0);
 
 	if (num % test == 0)
 		return (0);
