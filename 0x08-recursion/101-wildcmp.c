@@ -35,7 +35,7 @@ int my_wildcmp(char *str1, char *str2, int i, int j)
 	}
 
 	if (str2[j] == 42)
-		j = j + count_wild(str2, j) + 1;
+		j = j + count_wild(str2, j);
 
 	if (str1[i] != str2[j] && str1[i] != '\0')
 		i++;
