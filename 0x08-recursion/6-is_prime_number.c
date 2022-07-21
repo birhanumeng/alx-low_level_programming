@@ -6,7 +6,7 @@ int my_prime_number(int num, int test);
  * @n: number to be checked if it is prime number
  * Return: 1 if input number is prime, otherwise 0
  */
-int int is_prime_number(int n)
+int is_prime_number(int n)
 {
 	int i = 2;
 
