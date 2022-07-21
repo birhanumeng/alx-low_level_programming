@@ -45,7 +45,7 @@ int my_wildcmp(char *str1, char *str2, int i, int j)
 		return (0);
 	}
 
-	if (|| str1[i] != str2[j] && str2[j] != 42)
+	if (str1[i] != str2[j] && str2[j] != 42)
 		return (0);
 
 	return my_wildcmp(str1, str2, i, j);
