@@ -31,7 +31,7 @@ int my_palindrome(char *str, int i, int j)
 	if (i >= j)
 		return (1);
 
-	my_palindrome(str, i++, j--);
+	return (my_palindrome(str, i++, j--));
 }
 
 /**
