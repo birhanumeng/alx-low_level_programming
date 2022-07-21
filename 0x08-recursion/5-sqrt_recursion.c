@@ -9,6 +9,7 @@ int my_sqrt(int num, int root);
 int _sqrt_recursion(int n)
 {
 	int i = 1;
+
 	return (my_sqrt(n, i));
 }
 
@@ -16,7 +17,7 @@ int _sqrt_recursion(int n)
  * my_sqrt - find natural square root of a number
  * @num: number to be calculated it's natural square root if any
  * @root: testing number is it is square root of the number
- * Retrun: natural square root of a number if any. Otherwise -1
+ * Return: natural square root of a number if any. Otherwise -1
  */
 int my_sqrt(int num, int root)
 {
