@@ -9,9 +9,9 @@ int my_strlen(char *str, int len);
  */
 int is_palindrome(char *s)
 {
-	int i = 0, j;
+	int i = 0, len = 0, j;
 
-	j = 6;
+	j = my_strlen(s, len);
 
 	return (my_palindrome(s, i, j));
 }
@@ -43,7 +43,7 @@ int my_palindrome(char *str, int i, int j)
 int my_strlen(char *str, int len)
 {
 	if (*str != '\0')
-		my_strlen(str++, len++);
+		my_strlen(str + 1, len + 1);
 
 	return (len);
 }
