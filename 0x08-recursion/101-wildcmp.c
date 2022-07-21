@@ -45,7 +45,7 @@ int my_wildcmp(char *str1, char *str2, int i, int j)
 		return (0);
 	}
 
-	return my_wildcmp(str1, str2, i, j);
+	return (my_wildcmp(str1, str2, i, j));
 }
 
 /**
