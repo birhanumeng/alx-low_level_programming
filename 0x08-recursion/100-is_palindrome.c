@@ -1,6 +1,7 @@
 #include "main.h"
 
-int my_palindrome(int *str, int i, int j);
+int my_palindrome(char *str, int i, int j);
+int my_strlen(char *str, int len);
 /**
  * is_palindrome - check is the string is palindrome
  * @s: string to be checked if it is palindrome
@@ -22,7 +23,7 @@ int is_palindrome(char *s)
  * @j: for traversing string from last point of a string
  * Return: 1 if a string is palindrome, otherwise 0
  */
-int my_palindrome(int *str, int i, int j)
+int my_palindrome(char *str, int i, int j)
 {
 	if (*(str + i) != *(str + j))
 		return (0);
@@ -39,7 +40,7 @@ int my_palindrome(int *str, int i, int j)
  * @len: holding length of a string
  * Return: length of a string
  */
-int my_strlen(char *str, int *len)
+int my_strlen(char *str, int len)
 {
 	if (*str != '\0')
 		my_strlrn(str++, len++);
