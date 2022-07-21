@@ -1,6 +1,6 @@
 #include "main.h"
 
-int my_wildcmp(char *str1, char *str2, int i, int j)
+int my_wildcmp(char *str1, char *str2, int i, int j);
 int count_wild(char *str, int count);
 /**
  * wildcmp - comparing two strings with with wildcard
