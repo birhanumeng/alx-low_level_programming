@@ -17,10 +17,13 @@ int is_prime_number(int n)
  * my_prime_number - check is the number is prime number
  * @num: number to be checked for prime number
  * @test: testing number to checking if a number is prime number
- * Return: 1 if a number is prime number otherwise 0 
+ * Return: 1 if a number is prime number otherwise 0
  */
 int my_prime_number(int num, int test)
 {
+	if (num < 2)
+		return (1);
+
 	if (num % test == 0)
 		return (0);
 
