@@ -18,7 +18,7 @@ int is_palindrome(char *s)
 
 /**
  * my_palindrome - check if a string is palindrome
- * @s: string to be checked for palindrome
+ * @str: string to be checked for palindrome
  * @i: for traversing string from star point of a string
  * @j: for traversing string from last point of a string
  * Return: 1 if a string is palindrome, otherwise 0
@@ -27,7 +27,7 @@ int my_palindrome(char *str, int i, int j)
 {
 	if (str[i] != str[j])
 		return (0);
-	
+
 	if ((i + 1) >= j)
 		return (1);
 
@@ -42,8 +42,8 @@ int my_palindrome(char *str, int i, int j)
  */
 int my_strlen(char *str, int len)
 {
-	if (*str != '\0')
-		my_strlen(str + 1, len + 1);
+	if (str[len] != '\0')
+		my_strlen(str, len + 1);
 
 	return (len);
 }
