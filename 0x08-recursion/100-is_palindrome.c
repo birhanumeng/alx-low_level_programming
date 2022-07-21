@@ -25,7 +25,7 @@ int is_palindrome(char *s)
  */
 int my_palindrome(char *str, int i, int j)
 {
-	if (*(str + i) != *(str + j))
+	if (str[i] != str[j])
 		return (0);
 	
 	if ((i + 1) >= j)
