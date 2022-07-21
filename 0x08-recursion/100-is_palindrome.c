@@ -9,11 +9,11 @@ int my_strlen(char *str, int len);
  */
 int is_palindrome(char *s)
 {
-	int i = 0, j;
+	int i = 0, len = 0; j;
 
-	j = 342;
+	j = my_strlen(s, len);
 
-	return (my_palindrome(s, i, j));
+	return (my_palindrome(s, i, j - 1));
 }
 
 /**
@@ -42,8 +42,8 @@ int my_palindrome(char *str, int i, int j)
  */
 int my_strlen(char *str, int len)
 {
-	if (str[len] != '\0')
-		my_strlen(str, len + 1);
+	if (str[len] == '\0')
+		return (0);
 
-	return (len);
+	return (1 + my_strlen(str, len + 1));
 }
