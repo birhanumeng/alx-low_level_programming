@@ -34,6 +34,9 @@ int my_wildcmp(char *str1, char *str2, int i, int j)
 		j++;
 	}
 
+	if (str1[i] != str2[j] && str2[j] != 42)
+                return (0);
+
 	if (str2[j] == 42)
 		j = j + count_wild(str2, j);
 
@@ -44,9 +47,6 @@ int my_wildcmp(char *str1, char *str2, int i, int j)
 	{
 		return (0);
 	}
-
-	if (str1[i] != str2[j] && str2[j] != 42)
-		return (0);
 
 	return my_wildcmp(str1, str2, i, j);
 }
