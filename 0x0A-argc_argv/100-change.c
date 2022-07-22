@@ -22,31 +22,17 @@ int main(int argc, char *argv[])
 	{
 		while (change < coin)
 		{
+			count++;
 			if ((change + 25) <= coine)
-			{
 				change += 25;
-				count++;
-			}
 			else if ((change + 10) <= coine)
-			{
 				change += 10;
-				count++;
-			}
 			else if ((change + 5) <= coine)
-			{
 				change += 5;
-				count++;
-			}
 			else if ((change + 2) <= coine)
-			{
 				change += 2;
-				count++;
-			}
 			else
-			{
 				change += 1;
-				count++;
-			}
 		}
 	}
 
