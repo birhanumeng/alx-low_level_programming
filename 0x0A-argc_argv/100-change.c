@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
 	if (atoi(argv[1]) > 0)
 	{
-		while (change < coin)
+		while (change < coine)
 		{
 			count++;
 			if ((change + 25) <= coine)
