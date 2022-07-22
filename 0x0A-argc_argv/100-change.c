@@ -24,15 +24,25 @@ int main(int argc, char *argv[])
 		{
 			count++;
 			if ((change + 25) <= coine)
+			{
 				change += 25;
+			}
 			else if ((change + 10) <= coine)
+			{
 				change += 10;
+			}
 			else if ((change + 5) <= coine)
+			{
 				change += 5;
+			}
 			else if ((change + 2) <= coine)
+			{
 				change += 2;
+			}
 			else
+			{
 				change += 1;
+			}
 		}
 	}
 
