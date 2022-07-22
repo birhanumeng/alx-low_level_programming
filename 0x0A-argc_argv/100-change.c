@@ -17,40 +17,31 @@ int main(int argc, char *argv[])
                 printf("Error\n");
                 return (1);
         }
-
-        if (atoi(argv[1]) > 0)
-        {
-                while (change < coine)
+	while (change < coine)
                 {
                         count++;
                         if ((change + 25) <= coine)
                         {
                                 change += 25;
-				continue;
                         }
                         else if ((change + 10) <= coine)
                         {
                                 change += 10;
-				continue;
                         }
                         else if ((change + 5) <= coine)
                         {
                                 change += 5;
-				continue;
                         }
                         else if ((change + 2) <= coine)
                         {
                                 change += 2;
-				continue;
                         }
                         else
                         {
                                 change += 1;
                         }
                 }
-        }
-
-        printf("%d\n", count);
+	printf("%d\n", count);
 
         return (0);
 }
