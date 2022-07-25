@@ -22,7 +22,6 @@ char *_strdup(char *str)
 		str++;
 		new_str++;
 	}
-	free(new_str);
 
 	return (new_str);
 }
