@@ -10,7 +10,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i = 0, j = 0, size;
+	int i = 0, j = 0, size, k;
 	char *str;
 
 	if (s1 == NULL)
@@ -18,9 +18,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	while (*s1)
+	while (s1[i])
 		i++;
-	while (*s2 && j <= n)
+	while (s2[j] && j <= n)
 		j++;
 
 	size = i + j + 1;
