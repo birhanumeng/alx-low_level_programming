@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdlib.h>
 
 void init(char *str, int l);
