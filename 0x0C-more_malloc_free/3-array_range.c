@@ -6,7 +6,7 @@
  *               from min to max
  * @min: minimum element in the array
  * @max: max element in the array
- * Return: pointer to the created array or NULL 
+ * Return: pointer to the created array or NULL
  *         on fails or if min > max
  */
 int *array_range(int min, int max)
@@ -22,11 +22,7 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	while (min <= max)
-	{
-		int_arr[index] = min;
-		index++;
-		min++;
-	}
+		int_arr[index++] = min++;
 
 	return (int_arr);
 }
