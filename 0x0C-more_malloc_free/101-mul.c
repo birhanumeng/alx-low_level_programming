@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
+int check_for_digits(char **av);
 void init(char *str, int l);
 /**
  * main - multiply two numbers
@@ -51,17 +52,22 @@ int main(int argc, char *argv[])
 }
 
 /**
- * init - initializes a string
- * @str: sting to initialize
- * @l: length of strinf
+ * check_for_digits - checks the arguments to ensure they are digits
+ * @av: pointer to arguments
  *
- * Return: void
+ * Return: 0 if digits, 1 if not
  */
-void init(char *str, int l)
+int check_for_digits(char **av)
 {
-	int i;
+	int i, j;
 
-	for (i = 0; i < l; i++)
-		str[i] = '0';
-	str[i] = '\0';
+	for (i = 1; i < 3; i++)
+	{
+		for (j = 0; av[i][j]; j++)
+		{
+			if (av[i][j] < '0' || av[i][j] > '9')
+				return (1);
+		}
+	}
+	return (0);
 }
