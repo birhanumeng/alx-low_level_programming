@@ -20,8 +20,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	mem_arr = malloc(nmemb * size);
 	if (mem_arr == NULL)
 		return (NULL);
+
 	tmp = mem_array;
-	for (i = 0; i < nmemb; i++)
+	for (i = 0; i < (nmemb * size); i++)
 		tmp[i] = '\0';
 
 	return (mem_arr);
