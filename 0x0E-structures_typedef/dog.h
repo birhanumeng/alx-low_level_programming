@@ -15,6 +15,9 @@ struct dog
 	char *owner;
 };
 
+/**
+ * dog_t - new type for struct dog
+ */
 typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
