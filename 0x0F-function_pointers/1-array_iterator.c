@@ -13,7 +13,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	if (array != NULL && size > 0 && action !=NULL)
 	{
-		while(size-- >= 0)
+		while(size-- > 0)
 			action(*array++);
 	}
 }
