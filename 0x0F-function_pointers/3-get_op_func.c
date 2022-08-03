@@ -1,61 +1,28 @@
 #include "3-calc.h"
+#include <stdlib.h>
 
 /**
- * op_add - sum the two numbers
- * @a: first number
- * @b: second number
+ * get_op_func - selects the correct function to perform
+ *               the operation asked by the user
+ * @s: selected operator
  *
- * Return: the sum of two numbers
+ * Return: a pointer to the function that corresponds
+ *         to the operator given as a parameter
  */
-int op_add(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
-	return (a + b);
-}
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
+	int i = 0;
 
-/**
- * op_sub - substruct the two numbers
- * @a: first number
- * @b: second number
- *
- * Return: the substruction of two numbers
- */
-int op_sub(int a, int b)
-{
-	return (a - b);
-}
+	while (ops[i].op != NULL && *(ops[i].op) != *s)
+		i++;
 
-/**
- * op_mul - multiply the two numbers
- * @a: first number
- * @b: second number
- *
- * Return: the multplication of two numbers
- */
-int op_mul(int a, int b)
-{
-	return (a * b);
-}
-
-/**
- * op_div - divide the two numbers
- * @a: first number
- * @b: second number
- *
- * Return: the division of two numbers
- */
-int op_div(int a, int b)
-{
-	return (a / b);
-}
-
-/**
- * op_mod - calculate modulo of a number
- * @a: first number
- * @b: second number
- *
- * Return: modulo of a number
- */
-int op_mod(int a, int b)
-{
-	return (a % b);
+	return (ops[i].f);
 }
