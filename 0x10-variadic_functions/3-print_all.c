@@ -17,10 +17,10 @@ void print_all(const char * const format, ...)
 {
 	unsigned int i, j;
 	print_t p[] = {
-		{"c", print_c},
-		{"s", print_s},
-		{"i", print_i},
-		{"f", print_f},
+		{"c", print_char},
+		{"s", print_str},
+		{"i", print_int},
+		{"f", print_float},
 		{NULL, NULL}
 	};
 	va_list valist;
