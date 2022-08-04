@@ -10,12 +10,14 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list *num_param;
+	va_list num_param;
 	int i, sum = 0;
 
 	va_start(num_param, n);
 	for (i = 0; i < n; i++)
-		sum += num_param[i];
+		sum += va_arg(num_param, int);
+
+	va_end(num_param);
 
 	return (sum);
 }
