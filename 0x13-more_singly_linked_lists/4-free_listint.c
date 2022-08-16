@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * free_listint - frees a list
+ * free_listint -  frees a list.
  * @head: head node
  *
- * Retrun: nothing
+ * Return: void
  */
 void free_listint(listint_t *head)
 {
