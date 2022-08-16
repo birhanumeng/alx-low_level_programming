@@ -2,25 +2,26 @@
 #include <stdlib.h>
 
 /**
- * free_listint_safe - frees a list
- * @h: the pointer to the start of list to free
- * Return: size of free'd list (in nodes?)
+ * free_listint_safe - frees a list safe
+ * @h: refers to head node
+ *
+ * Return: size of free'd list
  */
 size_t free_listint_safe(listint_t **h)
 {
-	size_t nodeCount = 0;
-	listint_t *temp = NULL;
+	size_t count = 0;
+	listint_t *tmp = NULL;
 
-	if (!(h && *h))
-		return (nodeCount);
+	if (h == NULL || *h == NULL)
+		return (count);
 	while (*h)
 	{
-		nodeCount++;
+		count++;
 		if (*h > (*h)->next)
 		{
-			temp = *h;
+			tmp = *h;
 			*h = (*h)->next;
-			free(temp);
+			free(tmp);
 		}
 		else
 		{
@@ -29,5 +30,5 @@ size_t free_listint_safe(listint_t **h)
 		}
 	}
 	*h = NULL;
-	return (nodeCount);
+	return (count);
 }
