@@ -1,7 +1,8 @@
 #include "lists.h"
 #include <stdio.h>
 
-/** print_listint - prints all the elements in a list
+/**
+ * print_listint - prints all the elements in a list
  * @h: list
  *
  * Retrun: number of nodes
@@ -16,5 +17,6 @@ size_t print_listint(const listint_t *h)
 		count++;
 		h = h->next;
 	}
+
 	return (count);
 }
