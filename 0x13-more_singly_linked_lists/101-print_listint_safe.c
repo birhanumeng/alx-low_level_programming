@@ -4,7 +4,6 @@
 /**
  * print_listint_safe - prints list, safe
  * @head: head node
- *
  * Return: number of nodes or exit 98 if it fails
  */
 size_t print_listint_safe(const listint_t *head)
