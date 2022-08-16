@@ -9,12 +9,14 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t nodeCount = 0;
+	size_t count = 0;
 
+	if (head == NULL)
+		exit(98);
 	while (head)
 	{
 		printf("[%p] %d\n", (void *)head, head->n);
-		nodeCount += 1;
+		count++;
 
 		if (head > head->next)
 		{
@@ -27,5 +29,5 @@ size_t print_listint_safe(const listint_t *head)
 			break;
 		}
 	}
-	return (nodeCount);
+	return (count);
 }
