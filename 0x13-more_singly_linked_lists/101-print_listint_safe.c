@@ -1,6 +1,5 @@
 #include "lists.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * print_listint_safe - prints list safe
@@ -12,8 +11,6 @@ size_t print_listint_safe(const listint_t *head)
 {
 	size_t count = 0;
 
-	if (head == NULL)
-		exit(98);
 	while (head)
 	{
 		printf("[%p] %d\n", (void *)head, head->n);
