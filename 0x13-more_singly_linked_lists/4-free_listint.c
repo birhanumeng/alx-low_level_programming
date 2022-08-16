@@ -1,7 +1,8 @@
 #include "lists.h"
 #include <stdlib.h>
 
-/** free_listint - frees a list
+/**
+ * free_listint - frees a list
  * @head: head node
  *
  * Retrun: nothing
