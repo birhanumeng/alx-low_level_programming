@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_listint -  frees a list.
+ * free_listint2 -  frees a list.
  * @head: refers to head node
  *
  * Return: void
