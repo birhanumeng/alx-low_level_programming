@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * flip_bits - find number of bits needed to flip to get 
+ * flip_bits - find number of bits needed to flip to get
  *             from one number to another
  * @n: unsigned number
  * @m: fliped number
