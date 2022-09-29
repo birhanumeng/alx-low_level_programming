@@ -3,6 +3,7 @@
 /**
  * sum_dlistint - sum the elements in the list
  * @head: head node
+ *
  * Retrun: sum of elements
  */
 int sum_dlistint(dlistint_t *head)
