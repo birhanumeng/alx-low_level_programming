@@ -4,7 +4,7 @@
  * get_dnodeint_at_index - find the a node at an index
  * @head: head of the list
  * @index: the index for searching the node
- * Retrun: node at index
+ * Return: node at index
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
