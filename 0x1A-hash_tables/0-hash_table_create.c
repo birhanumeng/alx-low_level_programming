@@ -1,4 +1,6 @@
 #include "hash_tables.h"
+#include <stdio.h>
+#include "hash_tables.h"
 
 /**
  * hash_table_create - creating a hash table
