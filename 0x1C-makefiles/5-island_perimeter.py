@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+"""Defines a function for perimeter of island."""
+
 
 def island_perimeter(grid):
-    """finding the perimeter of island."""
+    """returns perimeter of island."""
     count = 0
     for i in range(len(grid) - 1):
         for j in range(len(grid[0]) - 1):
