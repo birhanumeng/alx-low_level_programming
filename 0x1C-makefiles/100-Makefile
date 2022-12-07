@@ -7,7 +7,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 	@chmod u+x $(NAME)
 
