@@ -10,16 +10,13 @@ $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 	@chmod u+x $(NAME)
 
-clean: *~ $(NAME)
-	RM *~ $(NAME)
+clean: 
+	$(RM) *~ $(NAME)
 
-oclean: $(OBJ)
-	RM $(OBJ)
+oclean: 
+	$(RM) $(OBJ)
 
-fclean: *~ $(NAME) $(OBJ)
-	RM *~ $(NAME) $(OBJ)
+fclean: clean oclean
 
-re: $(OBJ)
-	@RM *~ $(OBJ) $(NAME)
-	$(CC) $(OBJ) -o $(NAME)
+re: fclean all
 	@chmod u+x $(NAME)
