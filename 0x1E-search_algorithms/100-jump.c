@@ -1,5 +1,5 @@
 #include "search_algos.h"
-#include <math.h>
+
 /**
  * jump_search - jump search
  * @array: array data to be searched
@@ -9,10 +9,8 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-	/* declarations */
 	int jump, i;
 
-	/* check for null array */
 	if (!array)
 		return (-1);
 
@@ -29,6 +27,5 @@ int jump_search(int *array, size_t size, int value)
 		if (array[i] == value)
 			return (i);
 	}
-	/* not in the array */
 	return (-1);
 }
